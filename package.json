@@ -4,7 +4,7 @@
   "description": "landing page for mayan wildlife rescue center",
   "main": "public/main.js",
   "scripts": {
-    "start": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css --watch",
+    "start": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
