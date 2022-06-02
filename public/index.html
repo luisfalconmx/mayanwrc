@@ -5,10 +5,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <title>Document</title>
   </head>
-  <body class="bg-purple-500 text-neutral-50">
-    <h1>hello</h1>
+  <body class="bg-[#151719] text-neutral-50">
+    <header
+      class="bg-[url('./images/img-monos.jpg')] bg-cover bg-center border-b border-[#CC0808] py-3 px-9 flex justify-between items-center"
+    >
+      <img
+        class="max-w-[122px]"
+        src="./images/MAYAN-LOGO-colors-white2-1536x920.png"
+        alt="logotipo mayan wildlife rescue center"
+      />
+      <nav class="flex items-center">
+        <ul class="flex">
+          <li class="mr-4">
+            <a
+              href="#"
+              class="text-neutral-50 text-sm font-bold cursor-pointer"
+            >
+              Inicio
+            </a>
+          </li>
+          <li class="mr-4">
+            <a
+              href="#"
+              class="text-neutral-50 text-sm font-bold cursor-pointer"
+            >
+              Beneficios
+            </a>
+          </li>
+          <li class="mr-4">
+            <a
+              href="#"
+              class="text-neutral-50 text-sm font-bold cursor-pointer"
+            >
+              Galeria
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-neutral-50 text-sm font-bold cursor-pointer"
+            >
+              Nosotros
+            </a>
+          </li>
+        </ul>
+        <div class="w-0 h-9 border border-neutral-50 mx-4"></div>
+        <a href="https://www.instagram.com/mayanwildlife">
+          <img src="./images/instagram.svg" alt="icono instagram" />
+        </a>
+      </nav>
+    </header>
+    <main
+      class="bg-[url('./images/background-01.jpg')] bg-fixed bg-cover bg-center py-8"
+    >
+      <div class="max-w-[982px] mx-auto">
+        <div class="plyr__video-embed" id="player">
+          <iframe
+            src="https://player.vimeo.com/video/691647203?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+          ></iframe>
+        </div>
+      </div>
+      <p
+        class="text-center text-[#9BA9B4] text-xl font-normal max-w-[768px] mx-auto my-5"
+      >
+        Nuestra fundación está dedicada a restaurar el bienestar animal con la
+        ayuda de profesionales y expertos. Biólogos, Primatólogos, Etólogos y
+        veterinarios altamente preparados y especializados en la especie de mono
+        araña (ateles geoffroyi)
+      </p>
+      <div class="mx-auto w-fit flex">
+        <a href="#" class="block mr-2">
+          <button
+            class="bg-[#F4CC7B] text-neutral-900 font-medium px-8 py-3 rounded-sm"
+          >
+            Donar ahora
+          </button>
+        </a>
+        <a href="#" class="block ml-2">
+          <button
+            class="bg-[#33363A] text-neutral-200 font-medium px-8 py-3 rounded-sm"
+          >
+            Conocer más
+          </button>
+        </a>
+      </div>
+    </main>
+    <section
+      class="bg-[url('./images/background-02.jpg')] bg-fixed bg-cover bg-center py-8"
+    >
+      <h2 class="uppercase text-center text-[#D9E3EA] text-4xl mb-5">
+        Lo que logras con tu donación
+      </h2>
+
+      <p
+        class="text-center text-[#9BA9B4] text-xl font-normal max-w-[768px] mx-auto mt-5 mb-14"
+      >
+        Somos una fundación sin fines de lucro y gracias a tu donación podemos
+        seguir preservando la especie del mono araña
+      </p>
+
+      <div class="grid grid-cols-3 gap-x-10 max-w-[1140px] mx-auto">
+        <div>
+          <img
+            class="w-12 mx-auto mb-4"
+            src="./images/face-smile-solid.svg"
+            alt=""
+          />
+          <b class="text-3xl block text-center mb-2">Rescate</b>
+          <p class="text-center text-[#7A7A7A] text-lg max-w-[313px] mx-auto">
+            Hemos rescatado monos araña de diferentes problemáticas y de
+            diferentes lugares
+          </p>
+        </div>
+        <div>
+          <img
+            class="w-12 mx-auto mb-4"
+            src="./images/house-chimney-medical-solid.svg"
+            alt=""
+          />
+          <b class="text-3xl block text-center mb-2">Rehabilitacion</b>
+          <p class="text-center text-[#7A7A7A] text-lg max-w-[313px] mx-auto">
+            La necesidad de crear hábitats es poder ayudar a mejorar su vida y
+            devolverles un poco de su naturaleza en un estado de conservación
+          </p>
+        </div>
+        <div>
+          <img
+            class="w-12 mx-auto mb-4"
+            src="./images/hand-holding-heart-solid.svg"
+            alt=""
+          />
+          <b class="text-3xl block text-center mb-2">Calidad de Vida</b>
+          <p class="text-center text-[#7A7A7A] text-lg max-w-[313px] mx-auto">
+            Nuestra labor es que dentro de sus hábitats tengan una buena calidad
+            de vida, tengan enriquecimientos y puedan estar felices
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[url('./images/background-03.jpg')] bg-fixed bg-cover bg-center py-8"
+    >
+      <span
+        class="block w-fit mx-auto text-sm font-bold bg-[#C6F6D5] text-[#36A269] px-3 py-1 rounded-full mb-4"
+        >#SaveSpiderMonkey</span
+      >
+      <h2 class="uppercase text-center text-[#D9E3EA] text-4xl mb-5">
+        Salvemos al mono araña
+      </h2>
+      <p
+        class="text-center text-[#9BA9B4] text-xl font-normal max-w-[768px] mx-auto mt-5 mb-12"
+      >
+        El mono araña es una especie que está en grave peligro de extinción. Es
+        momento de restaurar el daño a la vida silvestre, causado por el ser
+        humano.
+      </p>
+
+      <div
+        class="grid grid-cols-3 justify-items-stretch max-w-[1120px] mx-auto gap-8"
+      >
+        <img
+          src="./images/foto-01.png"
+          alt="Fotografia numero 1 de un mono araña"
+        />
+        <img
+          src="./images/foto-02.png"
+          alt="Fotografia numero 2 de un mono araña"
+        />
+        <img
+          src="./images/foto-03.png"
+          alt="Fotografia numero 3 de un mono araña"
+        />
+        <img
+          src="./images/foto-04.png"
+          alt="Fotografia numero 4 de un mono araña"
+        />
+        <img
+          src="./images/foto-05.png"
+          alt="Fotografia numero 5 de un mono araña"
+        />
+        <img
+          src="./images/foto-06.png"
+          alt="Fotografia numero 6 de un mono araña"
+        />
+      </div>
+    </section>
+    <section
+      class="bg-[url('./images/background-04.jpg')] bg-fixed bg-cover bg-center py-8"
+    >
+      <h2 class="uppercase text-center text-[#D9E3EA] text-4xl mb-5">
+        Conoce más sobre nosotros
+      </h2>
+      <div class="max-w-[982px] mx-auto">
+        <div class="plyr__video-embed" id="player2">
+          <iframe
+            src="https://player.vimeo.com/video/703348137?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+          ></iframe>
+        </div>
+      </div>
+      <p
+        class="text-center text-[#9BA9B4] text-xl font-normal max-w-[768px] mx-auto my-5"
+      >
+        En Mayan Wildlife trabajamos de la mano como aliados con otras
+        asociaciones que rescatan y ayudan a los monos araña como Akumal Monkey
+        Sanctuary sumando fuerzas en la conservación y la preservación de la
+        especie.
+      </p>
+    </section>
+    <section class="flex justify-between py-16 px-12 bg-[#33363A]">
+      <div>
+        <h3 class="text-4xl text-[#D9E3EA] font-normal mb-3">
+          ¡Tu donación es importante!
+        </h3>
+        <p class="text-[#E2E1FF]">
+          Necesitamos tu ayuda para cumplir nuestra misión.
+        </p>
+      </div>
+      <a href="#" class="block mr-2">
+        <button
+          class="bg-[#F4CC7B] text-neutral-900 font-medium px-8 py-3 rounded-sm"
+        >
+          Donar ahora
+        </button>
+      </a>
+    </section>
+    <footer class="bg-[#25282C] py-10 px-8">
+      <img
+        class="max-w-[95px] mx-auto mb-6"
+        src="./images/MAYAN-LOGO-colors-white2-1536x920.png"
+        alt="logotipo mayan wildlife rescue center"
+      />
+      <p class="text-[#9BA9B4] text-center max-w-[514px] mx-auto mb-16">
+        Mayan Wildlife Rescue Center AC. Recinto de cuidado y conservación de
+        monos arañas.
+      </p>
+      <div class="flex justify-between max-w-[1120px] text-[#7A7A7A]">
+        <p>© 2022 Mayan Wildlife Rescue Center. All rights reserved.</p>
+        <p>Created by <a href="#">The Bouncing Koala</a></p>
+      </div>
+    </footer>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
