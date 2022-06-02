@@ -10,7 +10,7 @@
   </head>
   <body class="bg-[#151719] text-neutral-50">
     <header
-      class="bg-[url('./images/img-monos.jpg')] bg-cover bg-center border-b border-[#CC0808] py-3 px-9"
+      class="md:bg-[url('./images/img-monos.jpg')] bg-cover bg-center border-b border-[#CC0808] py-3 px-9"
     >
       <div class="container mx-auto flex justify-between items-center">
         <img
@@ -61,7 +61,7 @@
       </div>
     </header>
     <main
-      class="bg-[url('./images/background-01.jpg')] bg-fixed bg-cover bg-center py-8"
+      class="bg-[url('./images/background-01.jpg')] bg-fixed bg-cover bg-center pb-8 md:py-8"
     >
       <div class="max-w-[982px] mx-auto">
         <div class="plyr__video-embed" id="player">
@@ -74,7 +74,7 @@
         </div>
       </div>
       <p
-        class="text-center text-[#9BA9B4] text-xl font-normal max-w-[768px] mx-auto my-5 px-10 lg:px-0"
+        class="text-center text-[#9BA9B4] text-lg md:text-xl font-normal max-w-[768px] mx-auto my-5 px-4 md:px-10 lg:px-0"
       >
         Nuestra fundación está dedicada a restaurar el bienestar animal con la
         ayuda de profesionales y expertos. Biólogos, Primatólogos, Etólogos y
@@ -176,7 +176,7 @@
       </p>
 
       <div
-        class="grid grid-cols-2 lg:grid-cols-3 gap-8 justify-items-stretch max-w-[1120px] mx-auto px-8 lg:px-2"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-stretch max-w-[1120px] mx-auto px-8 lg:px-2"
       >
         <img
           src="./images/foto-01.png"
@@ -223,7 +223,7 @@
         </div>
       </div>
       <p
-        class="text-center text-[#9BA9B4] text-xl font-normal max-w-[768px] mx-auto my-5 px-10 lg:px-0"
+        class="text-center text-[#9BA9B4] text-lg md:text-xl font-normal max-w-[768px] mx-auto my-5 px-4 md:px-10 lg:px-0"
       >
         En Mayan Wildlife trabajamos de la mano como aliados con otras
         asociaciones que rescatan y ayudan a los monos araña como Akumal Monkey
@@ -236,10 +236,12 @@
         class="container mx-auto flex justify-between items-center lg:items-start flex-col lg:flex-row"
       >
         <div class="mb-6 lg:mb-0">
-          <h3 class="text-3xl lg:text-4xl text-[#D9E3EA] font-normal mb-3">
+          <h3
+            class="text-3xl lg:text-4xl text-center md:text-left text-[#D9E3EA] font-normal mb-3"
+          >
             ¡Tu donación es importante!
           </h3>
-          <p class="text-[#E2E1FF]">
+          <p class="text-[#E2E1FF] text-center md:text-left">
             Necesitamos tu ayuda para cumplir nuestra misión.
           </p>
         </div>
@@ -262,9 +264,15 @@
         Mayan Wildlife Rescue Center AC. Recinto de cuidado y conservación de
         monos arañas.
       </p>
-      <div class="flex justify-between max-w-[1120px] mx-auto text-[#7A7A7A]">
-        <p>© 2022 Mayan Wildlife Rescue Center. All rights reserved.</p>
-        <p>Created by <a href="#">The Bouncing Koala</a></p>
+      <div
+        class="flex flex-col md:flex-row justify-between max-w-[1120px] mx-auto text-[#7A7A7A]"
+      >
+        <p class="text-center md:text-left mb-4 md:mb-0">
+          © 2022 Mayan Wildlife Rescue Center. All rights reserved.
+        </p>
+        <p class="text-center md:text-left mb-4 md:mb-0">
+          Created by <a href="#">The Bouncing Koala</a>
+        </p>
       </div>
     </footer>
     <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
