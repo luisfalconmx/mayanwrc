@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +9,54 @@
     <title>Document</title>
   </head>
   <body class="bg-[#151719] text-neutral-50">
+    <!-- START - Mobile Offcanvas Menu -->
+    <nav
+      id="offcanvas-menu"
+      class="w-full h-full fixed bg-[#151719] z-50 flex flex-col py-6 pl-12 md:hidden -left-full"
+    >
+      <button
+        id="button-close"
+        class="flex items-center mb-24 ml-auto bg-[#ffffff] text-neutral-900 px-8 py-4"
+      >
+        <img class="w-8 mr-4" src="./images/arrow-left.svg" />
+        <b class="text-2xl">Ocultar</b>
+      </button>
+      <ul id="offcanvas-list" class="flex flex-col">
+        <li class="mb-10 offcanvas-list-item">
+          <a
+            href="#inicio"
+            class="text-neutral-50 text-3xl font-bold cursor-pointer"
+          >
+            Inicio
+          </a>
+        </li>
+        <li class="mb-10 offcanvas-list-item">
+          <a
+            href="#beneficios"
+            class="text-neutral-50 text-3xl font-bold cursor-pointer"
+          >
+            Beneficios
+          </a>
+        </li>
+        <li class="mb-10 offcanvas-list-item">
+          <a
+            href="#galeria"
+            class="text-neutral-50 text-3xl font-bold cursor-pointer"
+          >
+            Galeria
+          </a>
+        </li>
+        <li class="mb-10 offcanvas-list-item">
+          <a
+            href="#nosotros"
+            class="text-neutral-50 text-3xl font-bold cursor-pointer"
+          >
+            Nosotros
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END - Mobile Offcanvas Menu -->
     <header
       class="md:bg-[url('./images/img-monos.jpg')] bg-cover bg-center border-b border-[#CC0808] py-3 px-9"
     >
@@ -18,11 +66,14 @@
           src="./images/MAYAN-LOGO-colors-white2-1536x920.png"
           alt="logotipo mayan wildlife rescue center"
         />
-        <nav class="flex items-center">
+        <button id="button-open" class="block md:hidden">
+          <img src="./images/menu.svg" class="w-10" />
+        </button>
+        <nav class="hidden md:flex items-center">
           <ul class="flex">
             <li class="mr-4">
               <a
-                href="#"
+                href="#inicio"
                 class="text-neutral-50 text-sm font-bold cursor-pointer"
               >
                 Inicio
@@ -30,7 +81,7 @@
             </li>
             <li class="mr-4">
               <a
-                href="#"
+                href="#beneficios"
                 class="text-neutral-50 text-sm font-bold cursor-pointer"
               >
                 Beneficios
@@ -38,7 +89,7 @@
             </li>
             <li class="mr-4">
               <a
-                href="#"
+                href="#galeria"
                 class="text-neutral-50 text-sm font-bold cursor-pointer"
               >
                 Galeria
@@ -46,7 +97,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="#nosotros"
                 class="text-neutral-50 text-sm font-bold cursor-pointer"
               >
                 Nosotros
@@ -61,6 +112,7 @@
       </div>
     </header>
     <main
+      id="inicio"
       class="bg-[url('./images/background-01.jpg')] bg-fixed bg-cover bg-center pb-8 md:py-8"
     >
       <div class="max-w-[982px] mx-auto">
@@ -89,7 +141,7 @@
             Donar ahora
           </button>
         </a>
-        <a href="#" class="block ml-2">
+        <a href="#nosotros" class="block ml-2">
           <button
             class="bg-[#33363A] text-neutral-200 font-medium px-8 py-3 rounded-sm"
           >
@@ -99,6 +151,7 @@
       </div>
     </main>
     <section
+      id="beneficios"
       class="bg-[url('./images/background-02.jpg')] bg-fixed bg-cover bg-center py-8"
     >
       <h2
@@ -156,6 +209,7 @@
       </div>
     </section>
     <section
+      id="galeria"
       class="bg-[url('./images/background-03.jpg')] bg-fixed bg-cover bg-center py-8"
     >
       <span
@@ -205,6 +259,7 @@
       </div>
     </section>
     <section
+      id="nosotros"
       class="bg-[url('./images/background-04.jpg')] bg-fixed bg-cover bg-center py-8"
     >
       <h2
