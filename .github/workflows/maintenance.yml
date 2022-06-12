@@ -56,6 +56,8 @@ jobs:
           name: screenshot
           path: .github/
 
+      - run: rm -Rf .git/COMMIT_EDITMSG
+
       - name: Commit Screenshot
         uses: EndBug/add-and-commit@v8
         with:
