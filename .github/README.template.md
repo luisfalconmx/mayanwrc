@@ -2,8 +2,6 @@
 
 #### ${{ env.REPOSITORY_DESCRIPTION }}
 
-The main objective of this project is to test the basic skills acquired in courses related to frontend development. Complexity of this project is simple but enough to learn something new related to the development of user interfaces.
-
 ![${{env.REPOSITORY_NAME}} screenshot](https://raw.githubusercontent.com/${{env.REPOSITORY_FULL_NAME}}/${{env.REPOSITORY_DEFAULT_BRANCH}}/.github/screenshot.png)
 
 ## Getting Started
