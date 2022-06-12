@@ -1,2 +1,2 @@
-# mayanwrc
-landing page for mayan wildlife rescue center
+<!-- START .github/README.template.md -->
+<!-- END .github/README.template.md -->
