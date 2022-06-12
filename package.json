@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "landing page for mayan wildlife rescue center",
   "main": "public/main.js",
-  "scripts": {
-    "start": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --watch",
-    "build": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/luisfalconmx/mayanwrc#readme",
+  "author": "luisfalconmx",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luisfalconmx/mayanwrc.git"
@@ -15,12 +13,14 @@
   "keywords": [
     "landing-page"
   ],
-  "author": "luisfalconmx",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/luisfalconmx/mayanwrc/issues"
   },
-  "homepage": "https://github.com/luisfalconmx/mayanwrc#readme",
+  "scripts": {
+    "start": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --watch",
+    "build": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "tailwindcss": "^3.0.24"
   }
