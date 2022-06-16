@@ -19,9 +19,19 @@
   "scripts": {
     "start": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --watch",
     "build": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --fix .",
+    "pretty": "prettier --write ."
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.0",
     "tailwindcss": "^3.0.24"
   }
 }
