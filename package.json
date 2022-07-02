@@ -19,14 +19,15 @@
   "scripts": {
     "start": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --watch",
     "build": "tailwindcss -i ./public/library/tailwind.css -o ./public/styles.css --minify",
-    "lint": "eslint --fix",
+    "lint": "eslint --fix .",
     "pretty": "prettier --ignore-unknown --write .",
     "stylelint": "stylelint '**/*.css'",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "cli/**/*.{ts,js}": "eslint --fix",
-    "*": "prettier --ignore-unknown --write"
+    "*.js": "eslint --fix",
+    "*": "prettier --ignore-unknown --write",
+    "*.css": "stylelint --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
